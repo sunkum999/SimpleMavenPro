@@ -2,6 +2,7 @@ package com.our.pack;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,7 +22,13 @@ public class CallServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		System.out.println("hello Maven Servlet : ");
-		out.println("<h2><b><p> CoolServlet </p></b></h2>");
+		
+		Date time = new Date();
+		System.out.println("<div align=center>");
+		out.println("hello Maven Servlet : "+time);
+		out.println("<h2 style='color: red; font: italic; font-size: 50><b><p> "+time+"</p></b></h2>");
+		out.println("<h2 style='color: red; font: italic; font-size: 50><b><p> CoolServlet </p></b></h2>");
+		System.out.println("</div>");
 	}
 
 }
