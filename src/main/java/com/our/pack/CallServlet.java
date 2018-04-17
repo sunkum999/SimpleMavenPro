@@ -24,11 +24,11 @@ public class CallServlet extends HttpServlet {
 		System.out.println("hello Maven Servlet : ");
 		
 		Date time = new Date();
-		System.out.println("<div align=center>");
+		out.println("<div align=center>");
 		out.println("hello Maven Servlet : "+time);
 		out.println("<h2 style='color: red; font: italic; font-size: 50><b><p> "+time+"</p></b></h2>");
 		out.println("<h2 style='color: red; font: italic; font-size: 50><b><p> CoolServlet </p></b></h2>");
-		System.out.println("</div>");
+		out.println("<h2 style='color: blue; font: italic; font-size: 50><b><p> New Text </p></b></h2>");
+		out.println("</div>");
 	}
-
 }
